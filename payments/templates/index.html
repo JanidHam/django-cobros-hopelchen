@@ -3,17 +3,14 @@
 {% block content %}
 
 <div class="row">
+
+<!-- Sección pagos del día -->
 	<div class="col-xs-12">
 		<div class="box box-info">
 			<div class="box-header">
-				<h3 class="box-title">Buscar clientes</h3>
+				<h3 class="box-title">Pagos del día</h3>
 				<div class="box-tools">
-					<div class="input-group" style="width: 250px;">
-						<input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Ej. Carlos Sanchez">
-						<div class="input-group-btn">
-							<button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
-						</div>
-					</div>
+					<button class="btn btn-sm btn-info"><i class="fa fa-money"></i> Cobrar</button>
 				</div>
 			</div><!-- /.box-header -->
 			<div class="box-body table-responsive no-padding">
@@ -21,13 +18,13 @@
 					<tr>
 						<th>ID</th>
 						<th>Cliente</th>
-						<th>Estatus</th>
+						<th>Cantidad</th>
 						<th>Acciones</th>
 					</tr>
 					<tr>
 						<td>183</td>
 						<td>Janid Ham</td>
-						<td><span class="label label-success">Sin adeudo</span></td>
+						<td>140.00</td>
 						<td>
 							<button class="btn btn-primary"><i class="fa fa-facebook"></i></button>
 							<button class="btn btn-primary"><i class="fa fa-twitter"></i></button>
@@ -36,7 +33,7 @@
 					<tr>
 						<td>184</td>
 						<td>Jessica Ham</td>
-						<td><span class="label label-danger">Con adeudo</span></td>
+						<td>160.00</td>
 						<td>
 							<button class="btn btn-primary"><i class="fa fa-facebook"></i></button>
 							<button class="btn btn-primary"><i class="fa fa-twitter"></i></button>
@@ -46,6 +43,6 @@
 			</div><!-- /.box-body -->
 		</div><!-- /.box -->
 	</div>
-</div>
+<!-- end pagos del día -->
 
 {% endblock content %}
